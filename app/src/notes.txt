@@ -1,0 +1,15 @@
+Component Life Cycle
+
+1. componentDidMount(): Called once component mounted (was evaluated & rendered).
+Equivalent to useEffect hook in functional components. useEffect(..., [])
+
+2. componentDidUpdate(): Called once component was updated (was evaluated & rendered)
+Equivalent to useEffect hook with some dependencies. useEffect(..., [dependencies])
+
+3. componentWillUnmount(): Called right before the component is unmounted(removed from the DOM)
+Equivalent is the cleanup function in the useEffect hook.
+useEffect( ()=> {
+    
+    //Cleanup function
+    return ()=> {...}
+}, [])
