@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import styles from "./User.module.css";
 
 class User extends Component {
+  componentWillUnmount() {
+    console.log("User will unmount");
+  }
   render() {
     return <li className={styles.user}>{this.props.name}</li>;
   }
