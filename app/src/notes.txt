@@ -13,3 +13,6 @@ useEffect( ()=> {
     //Cleanup function
     return ()=> {...}
 }, [])
+
+4. componentsDidCatch(): It can be added to any class component to make it an error boundary.
+It would be triggered whenever a child component throws or triggers an error.
